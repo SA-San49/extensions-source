@@ -38,10 +38,21 @@ class AnvProxy(private val client: OkHttpClient) {
         }
     }
 
-    /** Registers a header set and returns the id used in the proxied URLs. */
-    fun newSession(headers: Map<String, String>): String {
+    /**
+     * Registers a header set and returns the id used in the proxied URLs,
+     * or null when the local server could not be started.
+     */
+    fun newSession(headers: Map<String, String>): String? {
+        if (server() == null) return null
         val id = (++sessionCounter).toString()
         sessions[id] = headers
+        // The player only ever uses the newest list; drop old header sets.
+        if (sessions.size > MAX_SESSIONS) {
+            sessions.keys
+                .sortedBy { it.toLongOrNull() ?: 0L }
+                .take(sessions.size - MAX_SESSIONS)
+                .forEach { sessions.remove(it) }
+        }
         return id
     }
 
@@ -54,6 +65,10 @@ class AnvProxy(private val client: OkHttpClient) {
         server?.stop()
         server = null
         sessions.clear()
+    }
+
+    private companion object {
+        private const val MAX_SESSIONS = 8
     }
 
     private fun encode(value: String): String = Base64.encodeToString(
@@ -202,9 +217,41 @@ class AnvProxy(private val client: OkHttpClient) {
         /** anv serves TS segments with `.jpg` / `.image` extensions and fake image headers. */
         private fun stripDisguise(body: ByteArray): ByteArray {
             if (body.size < 512) return body
+
             val head = body.copyOfRange(0, minOf(body.size, 4096))
-            val skip = AutoDetector.detectSkipBytes(head)
+            var skip = AutoDetector.detectSkipBytes(head)
+
+            // Fall back to a deeper scan when the disguise prefix is longer than the
+            // chunk the detector inspects (e.g. a full placeholder image).
+            if (skip == 0 && looksLikeImage(head)) {
+                skip = findTransportStreamOffset(body, minOf(body.size, MAX_DISGUISE_SCAN))
+            }
+
             return if (skip in 1 until body.size) body.copyOfRange(skip, body.size) else body
+        }
+
+        private fun looksLikeImage(head: ByteArray): Boolean {
+            if (head.size < 4) return false
+            val png = head[0] == 0x89.toByte() && head[1] == 0x50.toByte() && head[2] == 0x4E.toByte()
+            val jpeg = head[0] == 0xFF.toByte() && head[1] == 0xD8.toByte() && head[2] == 0xFF.toByte()
+            val gif = head[0] == 0x47.toByte() && head[1] == 0x49.toByte() && head[2] == 0x46.toByte()
+            return png || jpeg || gif
+        }
+
+        /** Offset of the first MPEG-TS sync pattern (188-byte packets). */
+        private fun findTransportStreamOffset(data: ByteArray, limit: Int): Int {
+            val sync = 0x47.toByte()
+            var offset = 0
+            while (offset + TS_PACKET * 3 < limit) {
+                if (data[offset] == sync &&
+                    data[offset + TS_PACKET] == sync &&
+                    data[offset + TS_PACKET * 2] == sync
+                ) {
+                    return offset
+                }
+                offset++
+            }
+            return 0
         }
 
         private fun statusOf(code: Int): Response.IStatus =
@@ -215,6 +262,8 @@ class AnvProxy(private val client: OkHttpClient) {
             private const val MIME_TS = "video/mp2t"
             private const val MIME_MP4 = "video/mp4"
             private const val MIME_VTT = "text/vtt"
+            private const val TS_PACKET = 188
+            private const val MAX_DISGUISE_SCAN = 64 * 1024
         }
     }
 }

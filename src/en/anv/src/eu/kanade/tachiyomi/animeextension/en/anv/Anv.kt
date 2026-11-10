@@ -244,7 +244,7 @@ class Anv : AnimeHttpSource(), ConfigurableAnimeSource {
                 if (!seenPlaylists.add(playlistUrl)) return@forEach
 
                 val serverLabel = source.label ?: "Server"
-                val qualities = if (sessionId != null) {
+                val qualities = if (useProxy) {
                     fetchResolutions(playlistUrl, directHeaders)
                 } else {
                     emptyList()
