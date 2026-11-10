@@ -17,83 +17,118 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
 
-      - name: Probe anv.to session
+      - name: Probe anv.to stream layer
         run: |
-          set -x
-          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
-          BASE='https://anv.to'
-          WATCH="$BASE/anime/frieren-beyond-journey-s-end-c6fbj-episode-1"
-          {
-          echo "===== 1. root page headers (cookie jar) ====="
-          curl -sS -o /dev/null -D - -c jar.txt -A "$UA" \
-            -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8' \
-            -H 'Accept-Language: en-US,en;q=0.9' \
-            -H 'Sec-Fetch-Mode: navigate' -H 'Sec-Fetch-Site: none' -H 'Sec-Fetch-Dest: document' \
-            -H 'Upgrade-Insecure-Requests: 1' "$BASE/"
-          echo "===== jar after root ====="
-          cat jar.txt
+          python3 - > anv-probe.txt 2>&1 <<'PY'
+          import json, urllib.request, urllib.error, http.cookiejar
 
-          echo "===== 2. watch page headers ====="
-          curl -sS -o watch.html -D - -b jar.txt -c jar.txt -A "$UA" \
-            -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8' \
-            -H 'Accept-Language: en-US,en;q=0.9' \
-            -H 'Sec-Fetch-Mode: navigate' -H 'Sec-Fetch-Site: same-origin' -H 'Sec-Fetch-Dest: document' \
-            -H 'Upgrade-Insecure-Requests: 1' -H "Referer: $BASE/" "$WATCH"
-          echo "===== jar after watch ====="
-          cat jar.txt
-          echo "watch html size: $(wc -c < watch.html)"
+          UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+          BASE = "https://anv.to"
+          jar = http.cookiejar.CookieJar()
+          opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
 
-          echo "===== 3. cookies seen in html/js ====="
-          grep -o 'shiro_watch' watch.html | head -3
-          grep -o 'shiro_[a-z_]*' watch.html | sort -u | head -10
+          NAV = {
+              "User-Agent": UA,
+              "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+              "Accept-Language": "en-US,en;q=0.9",
+              "Sec-Fetch-Mode": "navigate",
+              "Sec-Fetch-Dest": "document",
+              "Sec-Fetch-Site": "same-origin",
+              "Upgrade-Insecure-Requests": "1",
+          }
 
-          echo "===== 4. POST /api/episode with jar ====="
-          curl -sS -D - -b jar.txt -c jar.txt -A "$UA" \
-            -H 'Content-Type: application/json' -H 'Accept: */*' \
-            -H "Origin: $BASE" -H "Referer: $WATCH" \
-            -H 'Sec-Fetch-Mode: cors' -H 'Sec-Fetch-Site: same-origin' -H 'Sec-Fetch-Dest: empty' \
-            --data '{"anilistId":1000006351,"malId":52991,"episode":1,"first":true,"prefer":"sub"}' \
-            "$BASE/api/episode"
-          echo
-          echo "===== 5. POST /api/episode, xhr flavour ====="
-          curl -sS -o /dev/null -w 'code=%{http_code}\n' -b jar.txt -A "$UA" \
-            -H 'Content-Type: application/json' -H 'Accept: */*' \
-            -H "Origin: $BASE" -H "Referer: $WATCH" \
-            -H 'X-Requested-With: XMLHttpRequest' \
-            --data '{"anilistId":1000006351,"episode":1}' "$BASE/api/episode"
+          def get(url, headers=None):
+              h = {"User-Agent": UA}
+              if headers:
+                  h.update(headers)
+              req = urllib.request.Request(url, headers=h)
+              try:
+                  with opener.open(req, timeout=45) as r:
+                      return r.status, dict(r.headers), r.read()
+              except urllib.error.HTTPError as e:
+                  return e.code, dict(e.headers), e.read()
+              except Exception as e:
+                  return -1, {}, repr(e).encode()
 
-          echo "===== 6. GET /api/episode ====="
-          curl -sS -o - -w '\ncode=%{http_code}\n' -b jar.txt -A "$UA" \
-            -H "Referer: $WATCH" "$BASE/api/episode?anilistId=1000006351&episode=1"
+          slug = "frieren-beyond-journey-s-end-c6fbj"
+          watch = f"{BASE}/anime/{slug}-episode-1"
+          st, hd, body = get(watch, NAV)
+          print("watch:", st, "cookies:", [(c.name, c.value[:20]) for c in jar])
+          cookie = "; ".join(f"{c.name}={c.value}" for c in jar)
+          print("cookie header:", cookie[:80])
 
-          echo "===== 7. HEAD watch page ====="
-          curl -sS -o /dev/null -D - -I -A "$UA" -H 'Accept: text/html' "$WATCH"
+          def api(payload):
+              req = urllib.request.Request(
+                  BASE + "/api/episode",
+                  data=json.dumps(payload).encode(),
+                  headers={
+                      "User-Agent": UA, "Content-Type": "application/json", "Accept": "*/*",
+                      "Origin": BASE, "Referer": watch, "Cookie": cookie,
+                  })
+              try:
+                  with opener.open(req, timeout=45) as r:
+                      return r.status, json.loads(r.read())
+              except urllib.error.HTTPError as e:
+                  return e.code, json.loads(e.read() or b"{}")
 
-          echo "===== 8. random slug watch page headers ====="
-          curl -sS -o /dev/null -D - -c jar2.txt -A "$UA" -H 'Accept: text/html' "$BASE/anime/one-piece-odmau-episode-1"
-          cat jar2.txt
+          st, ep = api({"anilistId": 1000006351, "malId": 52991, "episode": 1, "first": True, "prefer": "sub"})
+          print("episode api:", st, "variants:", [v["id"] for v in ep.get("variants", [])])
 
-          echo "===== 9. POST /api/episode one piece with jar2 ====="
-          curl -sS -w '\ncode=%{http_code}\n' -b jar2.txt -A "$UA" \
-            -H 'Content-Type: application/json' -H "Origin: $BASE" \
-            -H "Referer: $BASE/anime/one-piece-odmau-episode-1" \
-            --data '{"anilistId":1000001642,"malId":21,"episode":1,"first":true}' "$BASE/api/episode"
+          stream_headers = {"Referer": watch, "Cookie": cookie, "Accept": "*/*"}
 
-          echo "===== 10. POST with explicit dummy shiro_watch cookie ====="
-          curl -sS -w '\ncode=%{http_code}\n' -A "$UA" \
-            -H 'Content-Type: application/json' -H "Origin: $BASE" -H "Referer: $WATCH" \
-            -H 'Cookie: shiro_watch=abc123' \
-            --data '{"anilistId":1000006351,"episode":1}' "$BASE/api/episode"
+          for variant in ep.get("variants", []):
+              print(f"\n================ variant {variant['id']} ================")
+              for src in variant.get("sources", []):
+                  url = src["url"] if src["url"].startswith("http") else BASE + src["url"]
+                  print(f"\n--- server {src['label']} ---")
+                  st, hd, body = get(url, stream_headers)
+                  text = body.decode("utf-8", "replace")
+                  print("master status:", st, "type:", hd.get("Content-Type"), "len:", len(body))
+                  print("master body:\n", text[:1200])
+                  if st != 200:
+                      continue
+                  variants_m = [l for l in text.splitlines() if l and not l.startswith("#")]
+                  print("variant uris:", variants_m[:6])
+                  if not variants_m:
+                      continue
+                  child = variants_m[0]
+                  child_url = child if child.startswith("http") else (BASE + ("" if child.startswith("/") else "/") + child)
+                  st2, hd2, body2 = get(child_url, stream_headers)
+                  text2 = body2.decode("utf-8", "replace")
+                  print("child status:", st2, "type:", hd2.get("Content-Type"), "len:", len(body2))
+                  print("child body head:\n", text2[:700])
+                  segs = [l for l in text2.splitlines() if l and not l.startswith("#")]
+                  if segs:
+                      seg = segs[0]
+                      seg_url = seg if seg.startswith("http") else (BASE + ("" if seg.startswith("/") else "/") + seg)
+                      st3, hd3, body3 = get(seg_url, stream_headers)
+                      print("segment status:", st3, "type:", hd3.get("Content-Type"), "len:", len(body3))
+                      print("segment first bytes:", body3[:16].hex(), "as text:", body3[:24])
+                      # without cookie
+                      st4, hd4, body4 = get(seg_url, {"Referer": watch, "Accept": "*/*", "Cookie": "shiro_watch=bad"})
+                      print("segment w/o cookie:", st4, "len:", len(body4))
+                  # subtitle
+                  tr = (src.get("tracks") or [])
+                  if tr:
+                      t = tr[0]
+                      turl = t["src"] if t["src"].startswith("http") else BASE + t["src"]
+                      st5, hd5, body5 = get(turl, stream_headers)
+                      print("subtitle status:", st5, "type:", hd5.get("Content-Type"), "len:", len(body5))
+                      print("subtitle head:", body5[:200].decode("utf-8", "replace"))
+                      st6, hd6, body6 = get(turl, {"Referer": watch, "Accept": "*/*"})
+                      print("subtitle w/o cookie:", st6, "len:", len(body6))
+              break
 
-          echo "===== 11. site html: next build id / api hints ====="
-          grep -o '/_next/static/chunks/[a-zA-Z0-9._/-]*\.js' watch.html | sort -u | head -12
-          } > anv-probe.txt 2>&1
-          echo done
+          # movie / special / missing-mal case
+          st, ep2 = api({"anilistId": 1000008839, "malId": 61967, "episode": 1})
+          print("\nsecond title (black clover s2) api:", st, "status:", str(ep2)[:120])
+          PY
+          echo "done"
 
       - name: Commit probe output
         run: |
           git config user.name "arena-probe"
           git config user.email "probe@arena.local"
           git add anv-probe.txt
-          git commit -m "probe-output: anv session probe"
+          git commit -m "probe-output: anv stream probe"
           git push
