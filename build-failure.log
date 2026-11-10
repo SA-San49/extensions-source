@@ -1,154 +1,3 @@
-Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
-See https://kotl.in/gradle/internal-compiler-symbols for more details.
-
-
-> Configure project :lib:sendvid-extractor
-w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
-The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
-This may lead to unpredictable and inconsistent behavior.
-Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
-See https://kotl.in/gradle/internal-compiler-symbols for more details.
-
-
-> Configure project :lib:sibnet-extractor
-w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
-The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
-This may lead to unpredictable and inconsistent behavior.
-Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
-See https://kotl.in/gradle/internal-compiler-symbols for more details.
-
-
-> Configure project :lib:streamdav-extractor
-w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
-The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
-This may lead to unpredictable and inconsistent behavior.
-Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
-See https://kotl.in/gradle/internal-compiler-symbols for more details.
-
-
-> Configure project :lib:streamhidevid-extractor
-w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
-The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
-This may lead to unpredictable and inconsistent behavior.
-Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
-See https://kotl.in/gradle/internal-compiler-symbols for more details.
-
-
-> Configure project :lib:streamhub-extractor
-w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
-The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
-This may lead to unpredictable and inconsistent behavior.
-Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
-See https://kotl.in/gradle/internal-compiler-symbols for more details.
-
-
-> Configure project :lib:streamlare-extractor
-w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
-The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
-This may lead to unpredictable and inconsistent behavior.
-Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
-See https://kotl.in/gradle/internal-compiler-symbols for more details.
-
-
-> Configure project :lib:streamsilk-extractor
-w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
-The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
-This may lead to unpredictable and inconsistent behavior.
-Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
-See https://kotl.in/gradle/internal-compiler-symbols for more details.
-
-
-> Configure project :lib:streamtape-extractor
-w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
-The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
-This may lead to unpredictable and inconsistent behavior.
-Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
-See https://kotl.in/gradle/internal-compiler-symbols for more details.
-
-
-> Configure project :lib:streamup-extractor
-w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
-The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
-This may lead to unpredictable and inconsistent behavior.
-Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
-See https://kotl.in/gradle/internal-compiler-symbols for more details.
-
-
-> Configure project :lib:streamvid-extractor
-w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
-The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
-This may lead to unpredictable and inconsistent behavior.
-Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
-See https://kotl.in/gradle/internal-compiler-symbols for more details.
-
-
-> Configure project :lib:streamwish-extractor
-w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
-The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
-This may lead to unpredictable and inconsistent behavior.
-Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
-See https://kotl.in/gradle/internal-compiler-symbols for more details.
-
-
-> Configure project :lib:synchrony
-w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
-The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
-This may lead to unpredictable and inconsistent behavior.
-Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
-See https://kotl.in/gradle/internal-compiler-symbols for more details.
-
-
-> Configure project :lib:universal-extractor
-w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
-The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
-This may lead to unpredictable and inconsistent behavior.
-Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
-See https://kotl.in/gradle/internal-compiler-symbols for more details.
-
-
-> Configure project :lib:unpacker
-w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
-The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
-This may lead to unpredictable and inconsistent behavior.
-Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
-See https://kotl.in/gradle/internal-compiler-symbols for more details.
-
-
-> Configure project :lib:upstream-extractor
-w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
-The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
-This may lead to unpredictable and inconsistent behavior.
-Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
-See https://kotl.in/gradle/internal-compiler-symbols for more details.
-
-
-> Configure project :lib:uqload-extractor
-w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
-The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
-This may lead to unpredictable and inconsistent behavior.
-Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
-See https://kotl.in/gradle/internal-compiler-symbols for more details.
-
-
-> Configure project :lib:vidbom-extractor
-w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
-The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
-This may lead to unpredictable and inconsistent behavior.
-Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
-See https://kotl.in/gradle/internal-compiler-symbols for more details.
-
-
-> Configure project :lib:vidguard-extractor
-w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
-The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
-This may lead to unpredictable and inconsistent behavior.
-Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
-See https://kotl.in/gradle/internal-compiler-symbols for more details.
-
-
-> Configure project :lib:vidhide-extractor
-w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
-The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
 This may lead to unpredictable and inconsistent behavior.
 Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
 See https://kotl.in/gradle/internal-compiler-symbols for more details.
@@ -278,52 +127,110 @@ Installing Android SDK Platform 32 in /usr/local/lib/android/sdk/platforms/andro
 > Task :core:preDebugBuild UP-TO-DATE
 > Task :lib:m3u8-server:preBuild UP-TO-DATE
 > Task :lib:m3u8-server:preDebugBuild UP-TO-DATE
-> Task :core:generateDebugResValues
 > Task :lib:m3u8-server:generateDebugResValues
-> Task :core:generateDebugResources
 > Task :lib:m3u8-server:generateDebugResources
+> Task :core:generateDebugResValues
+> Task :core:generateDebugResources
 > Task :lib:m3u8-server:packageDebugResources
 > Task :core:packageDebugResources
 > Task :lib:m3u8-server:parseDebugLocalResources
-> Task :core:parseDebugLocalResources
 > Task :src:en:anv:lintKotlinAndroidTest NO-SOURCE
 > Task :src:en:anv:lintKotlinAndroidTestDebug NO-SOURCE
 > Task :src:en:anv:lintKotlinAndroidTestRelease NO-SOURCE
 > Task :src:en:anv:lintKotlinDebug NO-SOURCE
+> Task :core:parseDebugLocalResources
 > Task :core:javaPreCompileDebug
 > Task :lib:m3u8-server:javaPreCompileDebug
 > Task :lib:m3u8-server:processDebugManifest
 > Task :core:processDebugManifest
+> Task :src:en:anv:lintKotlinMain
+> Task :src:en:anv:lintKotlinRelease NO-SOURCE
+> Task :src:en:anv:lintKotlinTest NO-SOURCE
+> Task :src:en:anv:lintKotlinTestDebug NO-SOURCE
+> Task :src:en:anv:lintKotlinTestFixtures NO-SOURCE
+> Task :src:en:anv:lintKotlinTestFixturesDebug NO-SOURCE
+> Task :src:en:anv:lintKotlinTestFixturesRelease NO-SOURCE
+> Task :src:en:anv:lintKotlinTestRelease NO-SOURCE
+> Task :src:en:anv:lintKotlin
+> Task :src:en:anv:writeManifestFile
+> Task :src:en:anv:preBuild
+> Task :src:en:anv:preDebugBuild
+> Task :src:en:anv:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :src:en:anv:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :src:en:anv:generateDebugBuildConfig
+> Task :src:en:anv:mapDebugSourceSetPaths
+> Task :src:en:anv:generateDebugResources UP-TO-DATE
 > Task :lib:m3u8-server:compileDebugLibraryResources
-> Task :core:generateDebugRFile
-> Task :core:compileDebugJavaWithJavac NO-SOURCE
+> Task :src:en:anv:createDebugCompatibleScreenManifests
 > Task :core:writeDebugAarMetadata
 > Task :core:extractDeepLinksDebug
+> Task :src:en:anv:extractDeepLinksDebug
+> Task :src:en:anv:javaPreCompileDebug FROM-CACHE
 > Task :core:compileDebugLibraryResources
+> Task :src:en:anv:generateDebugAssets UP-TO-DATE
 > Task :core:mergeDebugShaders
-> Task :core:bundleLibCompileToJarDebug
 > Task :core:compileDebugShaders NO-SOURCE
 > Task :core:generateDebugAssets UP-TO-DATE
 > Task :core:packageDebugAssets FROM-CACHE
 > Task :core:processDebugJavaRes NO-SOURCE
-> Task :core:bundleLibRuntimeToJarDebug
+> Task :src:en:anv:desugarDebugFileDependencies
 > Task :core:mergeDebugJniLibFolders FROM-CACHE
 > Task :core:mergeDebugNativeLibs NO-SOURCE
 > Task :core:copyDebugJniLibsProjectOnly
-
-> Task :src:en:anv:lintKotlinMain
-/home/runner/work/extensions-source/extensions-source/src/en/anv/src/eu/kanade/tachiyomi/animeextension/en/anv/Anv.kt:3:1: Lint error > [standard:import-ordering] Imports must be ordered in lexicographic order without any empty lines in-between with "java", "javax", "kotlin" and aliases in the end
-/home/runner/work/extensions-source/extensions-source/src/en/anv/src/eu/kanade/tachiyomi/animeextension/en/anv/AnvProxy.kt:3:1: Lint error > [standard:import-ordering] Imports must be ordered in lexicographic order without any empty lines in-between with "java", "javax", "kotlin" and aliases in the end
-
-> Task :src:en:anv:lintKotlinMain FAILED
+> Task :src:en:anv:mergeDebugJniLibFolders FROM-CACHE
+> Task :core:generateDebugRFile
+> Task :core:compileDebugJavaWithJavac NO-SOURCE
+> Task :core:bundleLibCompileToJarDebug
+> Task :src:en:anv:mergeDebugResources
+> Task :core:bundleLibRuntimeToJarDebug
+> Task :src:en:anv:checkDebugDuplicateClasses
+> Task :src:en:anv:validateSigningDebug
+> Task :lib:m3u8-server:writeDebugAarMetadata
+> Task :lib:m3u8-server:extractDeepLinksDebug FROM-CACHE
+> Task :lib:m3u8-server:mergeDebugShaders FROM-CACHE
 > Task :lib:m3u8-server:generateDebugRFile
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1794284713087.json
+> Task :lib:m3u8-server:compileDebugShaders NO-SOURCE
+> Task :src:en:anv:mergeExtDexDebug
+> Task :src:en:anv:checkDebugAarMetadata
+> Task :src:en:anv:processDebugMainManifest
+> Task :src:en:anv:processDebugManifest
+> Task :src:en:anv:writeDebugAppMetadata
+> Task :src:en:anv:writeDebugSigningConfigVersions
+> Task :src:en:anv:processDebugManifestForPackage
+> Task :src:en:anv:processDebugResources
+> Task :lib:m3u8-server:generateDebugAssets UP-TO-DATE
+> Task :lib:m3u8-server:packageDebugAssets FROM-CACHE
+> Task :lib:m3u8-server:mergeDebugJniLibFolders FROM-CACHE
+> Task :src:en:anv:mergeDebugAssets FROM-CACHE
+> Task :lib:m3u8-server:mergeDebugNativeLibs NO-SOURCE
+> Task :lib:m3u8-server:copyDebugJniLibsProjectOnly
+> Task :src:en:anv:compressDebugAssets
+> Task :src:en:anv:mergeDebugNativeLibs NO-SOURCE
+> Task :src:en:anv:stripDebugDebugSymbols NO-SOURCE
+> Task :lib:m3u8-server:compileDebugKotlin
+> Task :lib:m3u8-server:compileDebugJavaWithJavac NO-SOURCE
+> Task :lib:m3u8-server:processDebugJavaRes
+> Task :lib:m3u8-server:bundleLibCompileToJarDebug
+> Task :lib:m3u8-server:bundleLibRuntimeToJarDebug
+> Task :src:en:anv:mergeLibDexDebug
+
+> Task :src:en:anv:compileDebugKotlin
+e: file:///home/runner/work/extensions-source/extensions-source/src/en/anv/src/eu/kanade/tachiyomi/animeextension/en/anv/Anv.kt:89:40 Argument type mismatch: actual type is 'String', but 'JsonElement' was expected.
+e: file:///home/runner/work/extensions-source/extensions-source/src/en/anv/src/eu/kanade/tachiyomi/animeextension/en/anv/Anv.kt:134:58 Argument type mismatch: actual type is 'String', but 'JsonElement' was expected.
+e: file:///home/runner/work/extensions-source/extensions-source/src/en/anv/src/eu/kanade/tachiyomi/animeextension/en/anv/Anv.kt:139:84 Argument type mismatch: actual type is 'String', but 'JsonElement' was expected.
+e: file:///home/runner/work/extensions-source/extensions-source/src/en/anv/src/eu/kanade/tachiyomi/animeextension/en/anv/AnvDto.kt:16:30 Unresolved reference 'page'.
+e: file:///home/runner/work/extensions-source/extensions-source/src/en/anv/src/eu/kanade/tachiyomi/animeextension/en/anv/AnvProxy.kt:103:63 Unresolved reference 'BAD_GATEWAY'.
+e: file:///home/runner/work/extensions-source/extensions-source/src/en/anv/src/eu/kanade/tachiyomi/animeextension/en/anv/AnvProxy.kt:126:64 Argument type mismatch: actual type is 'String', but 'ByteArray' was expected.
+
+> Task :src:en:anv:compileDebugKotlin FAILED
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_3-1794285199326.json
 
 FAILURE: Build failed with an exception.
 
 * What went wrong:
-Execution failed for task ':src:en:anv:lintKotlinMain'.
-> lintKotlinMain sources failed lint check
+Execution failed for task ':src:en:anv:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
 
 * Try:
 > Run with --info or --debug option to get more log output.
@@ -331,7 +238,7 @@ Execution failed for task ':src:en:anv:lintKotlinMain'.
 > Get more help at https://help.gradle.org.
 
 * Exception is:
-org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':src:en:anv:lintKotlinMain'.
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':src:en:anv:compileDebugKotlin'.
 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:148)
 	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:282)
 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:146)
@@ -362,19 +269,50 @@ org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':src:en:
 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+	at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:116)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:44)
+	at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
+	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:264)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:128)
+	at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
+	at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
-Caused by: org.gradle.api.GradleException: lintKotlinMain sources failed lint check
-	at org.jmailen.gradle.kotlinter.tasks.LintTask.run(LintTask.kt:66)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
-	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.doExecute(IncrementalTaskAction.java:45)
-	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:51)
-	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.execute(IncrementalTaskAction.java:26)
-	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:29)
-	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:248)
+Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionException: A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+	at org.gradle.workers.internal.DefaultWorkerExecutor$WorkItemExecution.waitForCompletion(DefaultWorkerExecutor.java:283)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.lambda$waitForItemsAndGatherFailures$2(DefaultAsyncWorkTracker.java:130)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:336)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:319)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLock(DefaultWorkerLeaseService.java:324)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:126)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:92)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForAll(DefaultAsyncWorkTracker.java:78)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForCompletion(DefaultAsyncWorkTracker.java:66)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:256)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
@@ -492,9 +430,71 @@ Caused by: org.gradle.api.GradleException: lintKotlinMain sources failed lint ch
 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+	at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:116)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:44)
+	at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
+	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:264)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:128)
+	at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
+	at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+Caused by: org.jetbrains.kotlin.gradle.tasks.CompilationErrorException: Compilation error. See log for more details
+	at org.jetbrains.kotlin.gradle.tasks.TasksUtilsKt.throwExceptionIfCompilationFailed(tasksUtils.kt:21)
+	at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.run(GradleKotlinCompilerWork.kt:119)
+	at org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction.execute(GradleCompilerRunnerWithWorkers.kt:74)
+	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+	at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:170)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:187)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:120)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:162)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:264)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:128)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:133)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:157)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:126)
+	... 2 more
 
 
-BUILD FAILED in 2m 48s
-33 actionable tasks: 31 executed, 2 from cache
+BUILD FAILED in 31s
+66 actionable tasks: 48 executed, 9 from cache, 9 up-to-date
