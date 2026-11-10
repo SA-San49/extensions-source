@@ -1,0 +1,594 @@
+Downloading https://services.gradle.org/distributions/gradle-8.5-bin.zip
+............10%.............20%............30%.............40%.............50%............60%.............70%.............80%............90%.............100%
+
+Welcome to Gradle 8.5!
+
+Here are the highlights of this release:
+ - Support for running on Java 21
+ - Faster first use with Kotlin DSL
+ - Improved error and warning messages
+
+For more details see https://docs.gradle.org/8.5/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :buildSrc:checkKotlinGradlePluginConfigurationErrors
+> Task :buildSrc:generateExternalPluginSpecBuilders
+> Task :buildSrc:extractPrecompiledScriptPluginPlugins
+> Task :buildSrc:compilePluginsBlocks
+
+> Task :buildSrc:generatePrecompiledScriptPluginAccessors
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Task :buildSrc:generateScriptPluginAdapters
+> Task :buildSrc:pluginDescriptors
+> Task :buildSrc:processResources
+> Task :buildSrc:compileKotlin
+w: file:///home/runner/work/extensions-source/extensions-source/buildSrc/src/main/kotlin/lib-multisrc.gradle.kts:32:9 'freeCompilerArgs: List<String>' is deprecated. Please migrate to the compilerOptions DSL. More details are here: https://kotl.in/u1r8ln
+
+> Task :buildSrc:compileJava NO-SOURCE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:classes
+> Task :buildSrc:jar
+
+> Configure project :lib:amazon-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:bangumi-scraper
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:blogger-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:burstcloud-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:buzzheavier-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:cda-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:chillx-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:cloudflare-interceptor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:cryptoaes
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:dailymotion-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:dataimage
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:dood-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:fastream-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:filemoon-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:fireplayer-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:fusevideo-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:gdriveplayer-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:gogostream-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:goodstream-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:googledrive-episodes
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:googledrive-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:googledriveplayer-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:javcoverfetcher
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:lulu-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:lycoris-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:m3u8-server
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:megacloud-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:mixdrop-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:mp4upload-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:okru-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:pixeldrain-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:playlist-utils
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:savefile-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:sendvid-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:sibnet-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:streamdav-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:streamhidevid-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:streamhub-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:streamlare-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:streamsilk-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:streamtape-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:streamup-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:streamvid-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:streamwish-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:synchrony
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:universal-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:unpacker
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:upstream-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:uqload-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:vidbom-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:vidguard-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:vidhide-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:vidmoly-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:vido-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:vidsrc-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:vk-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:voe-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:vudeo-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:yourupload-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib-multisrc:anilist
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib-multisrc:animestream
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib-multisrc:datalifeengine
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib-multisrc:dooplay
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib-multisrc:dopeflix
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib-multisrc:zorotheme
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :src:en:anv
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Task :src:en:anv:formatKotlinAndroidTest NO-SOURCE
+> Task :src:en:anv:formatKotlinAndroidTestDebug NO-SOURCE
+> Task :src:en:anv:formatKotlinAndroidTestRelease NO-SOURCE
+> Task :src:en:anv:formatKotlinDebug NO-SOURCE
+> Task :src:en:anv:formatKotlinMain
+> Task :src:en:anv:formatKotlinRelease NO-SOURCE
+> Task :src:en:anv:formatKotlinTest NO-SOURCE
+> Task :src:en:anv:formatKotlinTestDebug NO-SOURCE
+> Task :src:en:anv:formatKotlinTestFixtures NO-SOURCE
+> Task :src:en:anv:formatKotlinTestFixturesDebug NO-SOURCE
+> Task :src:en:anv:formatKotlinTestFixturesRelease NO-SOURCE
+> Task :src:en:anv:formatKotlinTestRelease NO-SOURCE
+> Task :src:en:anv:formatKotlin
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1794285063203.json
+
+BUILD SUCCESSFUL in 2m 23s
+11 actionable tasks: 11 executed
