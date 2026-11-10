@@ -1,0 +1,69 @@
+name: Build Anv extension
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'arena/**'
+    paths:
+      - 'src/en/anv/**'
+      - 'lib/m3u8-server/**'
+      - '.github/workflows/build-anv.yml'
+
+concurrency:
+  group: build-anv-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: 17
+          distribution: temurin
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Locate the module chunk
+        run: |
+          python3 - <<'PY' >> "$GITHUB_ENV"
+          import os
+          mods = sorted(
+              d
+              for lang in os.listdir('src')
+              if os.path.isdir(os.path.join('src', lang))
+              for d in os.listdir(os.path.join('src', lang))
+              if os.path.isdir(os.path.join('src', lang, d))
+          )
+          print("CI_CHUNK_SIZE=1")
+          print(f"CI_CHUNK_NUM={mods.index('anv')}")
+          print(f"NUM_MODULES={len(mods)}")
+          PY
+
+      - name: Build
+        run: |
+          set -o pipefail
+          chmod +x ./gradlew
+          CI=true ./gradlew -p src assembleDebug --stacktrace 2>&1 | tee build.log
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: anv-apk
+          path: src/en/anv/build/outputs/apk/**/*.apk
+          if-no-files-found: warn
+
+      - name: Publish build log on failure
+        if: failure()
+        run: |
+          tail -n 400 build.log > build-failure.log || true
+          git config user.name "arena-ci"
+          git config user.email "ci@arena.local"
+          git add -f build-failure.log
+          git commit -m "ci: build failure log" || exit 0
+          git push || true

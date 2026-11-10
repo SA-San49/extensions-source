@@ -1,0 +1,15 @@
+ext {
+    extName = 'Anv'
+    extClass = '.Anv'
+    extVersionCode = 1
+}
+
+apply from: "$rootDir/common.gradle"
+
+dependencies {
+    // Reused for its byte-level disguise detection (segments are served with fake image headers).
+    implementation(project(':lib:m3u8-server'))
+    // Local proxy server so the player can replay the session cookie / referer on every
+    // playlist, segment and subtitle request.
+    implementation("org.nanohttpd:nanohttpd:2.3.1")
+}
