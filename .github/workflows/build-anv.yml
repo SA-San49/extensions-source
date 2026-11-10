@@ -48,6 +48,19 @@ jobs:
           print(f"NUM_MODULES={len(mods)}")
           PY
 
+      - name: Format Kotlin
+        run: |
+          set -o pipefail
+          chmod +x ./gradlew
+          CI=true ./gradlew -p src formatKotlin 2>&1 | tee format.log || true
+          if ! git diff --quiet; then
+            git config user.name "arena-ci"
+            git config user.email "ci@arena.local"
+            git add -A
+            git commit -m "style: ktlint format [skip ci]"
+            git push || true
+          fi
+
       - name: Build
         run: |
           set -o pipefail

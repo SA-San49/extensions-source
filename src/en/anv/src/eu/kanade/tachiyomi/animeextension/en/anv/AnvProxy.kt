@@ -3,12 +3,12 @@ package eu.kanade.tachiyomi.animeextension.en.anv
 import android.util.Base64
 import eu.kanade.tachiyomi.lib.m3u8server.AutoDetector
 import fi.iki.elonen.NanoHTTPD
-import java.io.ByteArrayInputStream
-import java.io.IOException
-import java.util.concurrent.ConcurrentHashMap
 import okhttp3.HttpUrl
 import okhttp3.OkHttpClient
 import okhttp3.Request
+import java.io.ByteArrayInputStream
+import java.io.IOException
+import java.util.concurrent.ConcurrentHashMap
 
 /**
  * Tiny local HTTP proxy.
