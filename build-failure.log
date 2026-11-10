@@ -1,0 +1,500 @@
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:sendvid-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:sibnet-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:streamdav-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:streamhidevid-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:streamhub-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:streamlare-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:streamsilk-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:streamtape-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:streamup-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:streamvid-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:streamwish-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:synchrony
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:universal-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:unpacker
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:upstream-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:uqload-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:vidbom-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:vidguard-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:vidhide-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:vidmoly-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:vido-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:vidsrc-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:vk-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:voe-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:vudeo-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib:yourupload-extractor
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib-multisrc:anilist
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib-multisrc:animestream
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib-multisrc:datalifeengine
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib-multisrc:dooplay
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib-multisrc:dopeflix
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :lib-multisrc:zorotheme
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+
+> Configure project :src:en:anv
+w: ⚠️ 'org.jetbrains.kotlin:kotlin-compiler-embeddable' Artifact Present in Build Classpath
+The artifact `org.jetbrains.kotlin:kotlin-compiler-embeddable` is present in the build classpath along Kotlin Gradle plugin.
+This may lead to unpredictable and inconsistent behavior.
+Solution: Please remove the `org.jetbrains.kotlin:kotlin-compiler-embeddable` artifact from the build classpath.
+See https://kotl.in/gradle/internal-compiler-symbols for more details.
+
+Checking the license for package Android SDK Platform 32 in /usr/local/lib/android/sdk/licenses
+License for package Android SDK Platform 32 accepted.
+Preparing "Install Android SDK Platform 32 (revision 1)".
+"Install Android SDK Platform 32 (revision 1)" ready.
+Installing Android SDK Platform 32 in /usr/local/lib/android/sdk/platforms/android-32
+"Install Android SDK Platform 32 (revision 1)" complete.
+"Install Android SDK Platform 32 (revision 1)" finished.
+
+> Task :core:preBuild UP-TO-DATE
+> Task :lib:m3u8-server:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core:preDebugBuild UP-TO-DATE
+> Task :lib:m3u8-server:preBuild UP-TO-DATE
+> Task :lib:m3u8-server:preDebugBuild UP-TO-DATE
+> Task :core:generateDebugResValues
+> Task :lib:m3u8-server:generateDebugResValues
+> Task :core:generateDebugResources
+> Task :lib:m3u8-server:generateDebugResources
+> Task :lib:m3u8-server:packageDebugResources
+> Task :core:packageDebugResources
+> Task :lib:m3u8-server:parseDebugLocalResources
+> Task :core:parseDebugLocalResources
+> Task :src:en:anv:lintKotlinAndroidTest NO-SOURCE
+> Task :src:en:anv:lintKotlinAndroidTestDebug NO-SOURCE
+> Task :src:en:anv:lintKotlinAndroidTestRelease NO-SOURCE
+> Task :src:en:anv:lintKotlinDebug NO-SOURCE
+> Task :core:javaPreCompileDebug
+> Task :lib:m3u8-server:javaPreCompileDebug
+> Task :lib:m3u8-server:processDebugManifest
+> Task :core:processDebugManifest
+> Task :lib:m3u8-server:compileDebugLibraryResources
+> Task :core:generateDebugRFile
+> Task :core:compileDebugJavaWithJavac NO-SOURCE
+> Task :core:writeDebugAarMetadata
+> Task :core:extractDeepLinksDebug
+> Task :core:compileDebugLibraryResources
+> Task :core:mergeDebugShaders
+> Task :core:bundleLibCompileToJarDebug
+> Task :core:compileDebugShaders NO-SOURCE
+> Task :core:generateDebugAssets UP-TO-DATE
+> Task :core:packageDebugAssets FROM-CACHE
+> Task :core:processDebugJavaRes NO-SOURCE
+> Task :core:bundleLibRuntimeToJarDebug
+> Task :core:mergeDebugJniLibFolders FROM-CACHE
+> Task :core:mergeDebugNativeLibs NO-SOURCE
+> Task :core:copyDebugJniLibsProjectOnly
+
+> Task :src:en:anv:lintKotlinMain
+/home/runner/work/extensions-source/extensions-source/src/en/anv/src/eu/kanade/tachiyomi/animeextension/en/anv/Anv.kt:3:1: Lint error > [standard:import-ordering] Imports must be ordered in lexicographic order without any empty lines in-between with "java", "javax", "kotlin" and aliases in the end
+/home/runner/work/extensions-source/extensions-source/src/en/anv/src/eu/kanade/tachiyomi/animeextension/en/anv/AnvProxy.kt:3:1: Lint error > [standard:import-ordering] Imports must be ordered in lexicographic order without any empty lines in-between with "java", "javax", "kotlin" and aliases in the end
+
+> Task :src:en:anv:lintKotlinMain FAILED
+> Task :lib:m3u8-server:generateDebugRFile
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1794284713087.json
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':src:en:anv:lintKotlinMain'.
+> lintKotlinMain sources failed lint check
+
+* Try:
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':src:en:anv:lintKotlinMain'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:148)
+	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:282)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:146)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:134)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+Caused by: org.gradle.api.GradleException: lintKotlinMain sources failed lint check
+	at org.jmailen.gradle.kotlinter.tasks.LintTask.run(LintTask.kt:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
+	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.doExecute(IncrementalTaskAction.java:45)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:51)
+	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.execute(IncrementalTaskAction.java:26)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:29)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:248)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:47)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:68)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:233)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:216)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:199)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:166)
+	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
+	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
+	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:41)
+	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:74)
+	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+	at org.gradle.internal.execution.steps.CreateOutputsStep.execute(CreateOutputsStep.java:50)
+	at org.gradle.internal.execution.steps.CreateOutputsStep.execute(CreateOutputsStep.java:28)
+	at org.gradle.internal.execution.steps.CaptureStateAfterExecutionStep.executeDelegateBroadcastingChanges(CaptureStateAfterExecutionStep.java:100)
+	at org.gradle.internal.execution.steps.CaptureStateAfterExecutionStep.execute(CaptureStateAfterExecutionStep.java:72)
+	at org.gradle.internal.execution.steps.CaptureStateAfterExecutionStep.execute(CaptureStateAfterExecutionStep.java:50)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:40)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:29)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:179)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeAndStoreInCache(BuildCacheStep.java:139)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$executeWithCache$4(BuildCacheStep.java:106)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$executeWithCache$5(BuildCacheStep.java:106)
+	at org.gradle.internal.Try$Success.map(Try.java:164)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithCache(BuildCacheStep.java:80)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$0(BuildCacheStep.java:69)
+	at org.gradle.internal.Either$Left.fold(Either.java:115)
+	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:59)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:68)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:46)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:25)
+	at org.gradle.internal.execution.steps.RecordOutputsStep.execute(RecordOutputsStep.java:36)
+	at org.gradle.internal.execution.steps.RecordOutputsStep.execute(RecordOutputsStep.java:22)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:91)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:55)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:55)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:37)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:65)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+	at org.gradle.internal.execution.steps.ResolveCachingStateStep.execute(ResolveCachingStateStep.java:76)
+	at org.gradle.internal.execution.steps.ResolveCachingStateStep.execute(ResolveCachingStateStep.java:37)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:108)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:55)
+	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.execute(CaptureStateBeforeExecutionStep.java:71)
+	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.execute(CaptureStateBeforeExecutionStep.java:45)
+	at org.gradle.internal.execution.steps.SkipEmptyWorkStep.executeWithNonEmptySources(SkipEmptyWorkStep.java:177)
+	at org.gradle.internal.execution.steps.SkipEmptyWorkStep.execute(SkipEmptyWorkStep.java:86)
+	at org.gradle.internal.execution.steps.SkipEmptyWorkStep.execute(SkipEmptyWorkStep.java:53)
+	at org.gradle.internal.execution.steps.RemoveUntrackedExecutionStateStep.execute(RemoveUntrackedExecutionStateStep.java:32)
+	at org.gradle.internal.execution.steps.RemoveUntrackedExecutionStateStep.execute(RemoveUntrackedExecutionStateStep.java:21)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+	at org.gradle.internal.execution.steps.CleanupStaleOutputsStep.execute(CleanupStaleOutputsStep.java:75)
+	at org.gradle.internal.execution.steps.CleanupStaleOutputsStep.execute(CleanupStaleOutputsStep.java:41)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:66)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:66)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:38)
+	at org.gradle.internal.execution.steps.AssignWorkspaceStep.lambda$execute$0(AssignWorkspaceStep.java:32)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:293)
+	at org.gradle.internal.execution.steps.AssignWorkspaceStep.execute(AssignWorkspaceStep.java:30)
+	at org.gradle.internal.execution.steps.AssignWorkspaceStep.execute(AssignWorkspaceStep.java:21)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:37)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:27)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:47)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:34)
+	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:64)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:145)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:134)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:80)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+
+
+BUILD FAILED in 2m 48s
+33 actionable tasks: 31 executed, 2 from cache
