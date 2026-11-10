@@ -17,133 +17,83 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
 
-      - name: Probe anv.to API
+      - name: Probe anv.to session
         run: |
-          python3 - > anv-probe.txt 2>&1 <<'PY'
-          import json, urllib.request, urllib.error
+          set -x
+          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+          BASE='https://anv.to'
+          WATCH="$BASE/anime/frieren-beyond-journey-s-end-c6fbj-episode-1"
+          {
+          echo "===== 1. root page headers (cookie jar) ====="
+          curl -sS -o /dev/null -D - -c jar.txt -A "$UA" \
+            -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8' \
+            -H 'Accept-Language: en-US,en;q=0.9' \
+            -H 'Sec-Fetch-Mode: navigate' -H 'Sec-Fetch-Site: none' -H 'Sec-Fetch-Dest: document' \
+            -H 'Upgrade-Insecure-Requests: 1' "$BASE/"
+          echo "===== jar after root ====="
+          cat jar.txt
 
-          UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-          BASE = "https://anv.to"
+          echo "===== 2. watch page headers ====="
+          curl -sS -o watch.html -D - -b jar.txt -c jar.txt -A "$UA" \
+            -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8' \
+            -H 'Accept-Language: en-US,en;q=0.9' \
+            -H 'Sec-Fetch-Mode: navigate' -H 'Sec-Fetch-Site: same-origin' -H 'Sec-Fetch-Dest: document' \
+            -H 'Upgrade-Insecure-Requests: 1' -H "Referer: $BASE/" "$WATCH"
+          echo "===== jar after watch ====="
+          cat jar.txt
+          echo "watch html size: $(wc -c < watch.html)"
 
-          def req(url, data=None, headers=None, method=None):
-              h = {"User-Agent": UA, "Accept": "application/json"}
-              if headers:
-                  h.update(headers)
-              body = None
-              if data is not None:
-                  body = json.dumps(data).encode()
-                  h["Content-Type"] = "application/json"
-              r = urllib.request.Request(url, data=body, headers=h, method=method)
-              try:
-                  with urllib.request.urlopen(r, timeout=45) as resp:
-                      return resp.status, dict(resp.headers), resp.read().decode("utf-8", "replace")
-              except urllib.error.HTTPError as e:
-                  return e.code, dict(e.headers), e.read().decode("utf-8", "replace")
-              except Exception as e:
-                  return -1, {}, repr(e)
+          echo "===== 3. cookies seen in html/js ====="
+          grep -o 'shiro_watch' watch.html | head -3
+          grep -o 'shiro_[a-z_]*' watch.html | sort -u | head -10
 
-          def catalog(op, variables):
-              st, hd, body = req(BASE + "/api/catalog", {"operation": op, "variables": variables},
-                                 {"Referer": BASE + "/", "Origin": BASE})
-              print(f"\n### {op} {json.dumps(variables)}")
-              print("status:", st)
-              try:
-                  j = json.loads(body)
-              except Exception:
-                  print("raw:", body[:800]); return None
-              if isinstance(j, dict) and "data" in j and j["data"]:
-                  d = j["data"]
-                  if "Page" in d:
-                      media = d["Page"].get("media") or []
-                      print("media count:", len(media), "pageInfo:", d["Page"].get("pageInfo"))
-                      if media:
-                          print("first media keys:", sorted(media[0].keys()))
-                          print("first media:", json.dumps(media[0])[:1500])
-                          print("titles:", [ (m.get("title") or {}).get("english") or (m.get("title") or {}).get("romaji") for m in media[:8] ])
-                  elif "Media" in d:
-                      print("Media:", json.dumps(d["Media"])[:4000])
-                  else:
-                      print("data keys:", list(d.keys()))
-                      print(json.dumps(d)[:2500])
-              else:
-                  print("body:", body[:1200])
-              return j
+          echo "===== 4. POST /api/episode with jar ====="
+          curl -sS -D - -b jar.txt -c jar.txt -A "$UA" \
+            -H 'Content-Type: application/json' -H 'Accept: */*' \
+            -H "Origin: $BASE" -H "Referer: $WATCH" \
+            -H 'Sec-Fetch-Mode: cors' -H 'Sec-Fetch-Site: same-origin' -H 'Sec-Fetch-Dest: empty' \
+            --data '{"anilistId":1000006351,"malId":52991,"episode":1,"first":true,"prefer":"sub"}' \
+            "$BASE/api/episode"
+          echo
+          echo "===== 5. POST /api/episode, xhr flavour ====="
+          curl -sS -o /dev/null -w 'code=%{http_code}\n' -b jar.txt -A "$UA" \
+            -H 'Content-Type: application/json' -H 'Accept: */*' \
+            -H "Origin: $BASE" -H "Referer: $WATCH" \
+            -H 'X-Requested-With: XMLHttpRequest' \
+            --data '{"anilistId":1000006351,"episode":1}' "$BASE/api/episode"
 
-          catalog("HomeAnime", {})
-          catalog("SearchAnime", {"search": "frieren", "page": 1, "perPage": 20})
-          catalog("BrowseAnime", {"sort": ["TRENDING_DESC"], "page": 1, "perPage": 20})
-          catalog("BrowseAnime", {"sort": ["POPULARITY_DESC"], "genres": ["Action"], "page": 1, "perPage": 24})
-          catalog("BrowseAnime", {"genres": ["Romance"], "page": 2, "perPage": 24})
-          catalog("BrowseAnime", {"sort": ["SCORE_DESC"], "format": "TV", "status": "RELEASING", "page": 1, "perPage": 24})
-          catalog("BrowseAnime", {"sort": ["POPULARITY_DESC"], "season": "FALL", "seasonYear": 2026, "page": 1, "perPage": 24})
-          catalog("BrowseAnime", {"search": "one piece", "page": 1, "perPage": 24})
-          catalog("BrowseAnime", {"sort": ["START_DATE_DESC"], "page": 1, "perPage": 24})
-          catalog("AnimeDetail", {"slug": "frieren-beyond-journey-s-end-c6fbj"})
+          echo "===== 6. GET /api/episode ====="
+          curl -sS -o - -w '\ncode=%{http_code}\n' -b jar.txt -A "$UA" \
+            -H "Referer: $WATCH" "$BASE/api/episode?anilistId=1000006351&episode=1"
 
-          st, hd, body = req(BASE + "/api/recent-episodes")
-          print("\n### recent-episodes status:", st, "len", len(body))
-          print(body[:800])
+          echo "===== 7. HEAD watch page ====="
+          curl -sS -o /dev/null -D - -I -A "$UA" -H 'Accept: text/html' "$WATCH"
 
-          st, hd, body = req(BASE + "/anime/frieren-beyond-journey-s-end-c6fbj-episode-1",
-                             headers={"Accept": "text/html"})
-          print("\n### watch page status:", st, "len:", len(body))
-          sc = hd.get("Set-Cookie", "")
-          print("set-cookie:", sc[:300])
-          cookie = sc.split(";")[0] if sc else ""
+          echo "===== 8. random slug watch page headers ====="
+          curl -sS -o /dev/null -D - -c jar2.txt -A "$UA" -H 'Accept: text/html' "$BASE/anime/one-piece-odmau-episode-1"
+          cat jar2.txt
 
-          watch_ref = BASE + "/anime/frieren-beyond-journey-s-end-c6fbj-episode-1"
-          for payload in [
-              {"anilistId": 1000006351, "malId": 52991, "episode": 1},
-              {"anilistId": 1000006351, "episode": 1, "first": True},
-          ]:
-              st, hd, body = req(BASE + "/api/episode", payload,
-                                 {"Referer": watch_ref, "Origin": BASE, "Cookie": cookie})
-              print("\n### episode", json.dumps(payload), "status:", st)
-              print(body[:2000])
-              try:
-                  ep = json.loads(body)
-                  for v in (ep.get("variants") or []):
-                      print("variant:", v.get("id"), v.get("label"), "sources:",
-                            [(s.get("label"), s.get("url"), [t.get("label") for t in (s.get("tracks") or [])]) for s in (v.get("sources") or [])])
-                  v = (ep.get("variants") or [{}])[0]
-                  src = (v.get("sources") or [{}])[0]
-                  url = src.get("url", "")
-                  if url:
-                      full = url if url.startswith("http") else BASE + url
-                      hdr = {"Cookie": cookie, "Referer": watch_ref, "Accept": "*/*"}
-                      st2, hd2, body2 = req(full, headers=hdr)
-                      print("master:", st2, hd2.get("Content-Type"), body2[:900])
-                      for line in body2.splitlines():
-                          if line and not line.startswith("#"):
-                              child = line if line.startswith("http") else BASE + ("" if line.startswith("/") else "/") + line
-                              st3, hd3, body3 = req(child, headers=hdr)
-                              print("child:", st3, hd3.get("Content-Type"), len(body3))
-                              inner = [l for l in body3.splitlines() if l and not l.startswith("#")]
-                              print("child first lines:", inner[:3])
-                              if inner:
-                                  seg = inner[0] if inner[0].startswith("http") else BASE + ("" if inner[0].startswith("/") else "/") + inner[0]
-                                  st4, hd4, body4 = req(seg, headers=hdr)
-                                  print("segment:", st4, hd4.get("Content-Type"), len(body4))
-                              break
-                      tr = (src.get("tracks") or [{}])[0]
-                      if tr.get("src"):
-                          turl = tr["src"] if tr["src"].startswith("http") else BASE + tr["src"]
-                          st5, hd5, body5 = req(turl, headers=hdr)
-                          print("subtitle:", st5, hd5.get("Content-Type"), body5[:300])
-              except Exception as e:
-                  print("episode parse err", repr(e))
+          echo "===== 9. POST /api/episode one piece with jar2 ====="
+          curl -sS -w '\ncode=%{http_code}\n' -b jar2.txt -A "$UA" \
+            -H 'Content-Type: application/json' -H "Origin: $BASE" \
+            -H "Referer: $BASE/anime/one-piece-odmau-episode-1" \
+            --data '{"anilistId":1000001642,"malId":21,"episode":1,"first":true}' "$BASE/api/episode"
 
-          st, hd, body = req(BASE + "/anime/frieren-beyond-journey-s-end-c6fbj",
-                             headers={"Accept": "text/html"})
-          print("\n### detail page status:", st, "len:", len(body))
-          print("episode markers:", body.count('-episode-'), "next_f:", body.count('_next'))
-          PY
-          echo "probe done: $(wc -l < anv-probe.txt) lines"
+          echo "===== 10. POST with explicit dummy shiro_watch cookie ====="
+          curl -sS -w '\ncode=%{http_code}\n' -A "$UA" \
+            -H 'Content-Type: application/json' -H "Origin: $BASE" -H "Referer: $WATCH" \
+            -H 'Cookie: shiro_watch=abc123' \
+            --data '{"anilistId":1000006351,"episode":1}' "$BASE/api/episode"
+
+          echo "===== 11. site html: next build id / api hints ====="
+          grep -o '/_next/static/chunks/[a-zA-Z0-9._/-]*\.js' watch.html | sort -u | head -12
+          } > anv-probe.txt 2>&1
+          echo done
 
       - name: Commit probe output
         run: |
           git config user.name "arena-probe"
           git config user.email "probe@arena.local"
           git add anv-probe.txt
-          git commit -m "probe-output: anv api dump"
+          git commit -m "probe-output: anv session probe"
           git push
