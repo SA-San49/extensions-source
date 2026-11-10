@@ -588,7 +588,7 @@ See https://kotl.in/gradle/internal-compiler-symbols for more details.
 > Task :src:en:anv:formatKotlinTestFixturesRelease NO-SOURCE
 > Task :src:en:anv:formatKotlinTestRelease NO-SOURCE
 > Task :src:en:anv:formatKotlin
-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1794285063203.json
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1794285328121.json
 
-BUILD SUCCESSFUL in 2m 23s
+BUILD SUCCESSFUL in 2m
 11 actionable tasks: 11 executed
