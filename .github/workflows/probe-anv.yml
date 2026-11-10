@@ -5,13 +5,21 @@ on:
     branches:
       - 'arena/**'
 
+permissions:
+  contents: write
+
 jobs:
   probe:
+    if: ${{ !contains(github.event.head_commit.message, 'probe-output') }}
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
       - name: Probe anv.to API
         run: |
-          python3 - <<'PY'
+          python3 - > anv-probe.txt 2>&1 <<'PY'
           import json, urllib.request, urllib.error
 
           UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
@@ -50,70 +58,92 @@ jobs:
                       print("media count:", len(media), "pageInfo:", d["Page"].get("pageInfo"))
                       if media:
                           print("first media keys:", sorted(media[0].keys()))
-                          print("first media:", json.dumps(media[0])[:1200])
+                          print("first media:", json.dumps(media[0])[:1500])
+                          print("titles:", [ (m.get("title") or {}).get("english") or (m.get("title") or {}).get("romaji") for m in media[:8] ])
                   elif "Media" in d:
-                      print("Media:", json.dumps(d["Media"])[:3000])
+                      print("Media:", json.dumps(d["Media"])[:4000])
                   else:
                       print("data keys:", list(d.keys()))
-                      print(json.dumps(d)[:2000])
+                      print(json.dumps(d)[:2500])
               else:
-                  print("body:", body[:1000])
+                  print("body:", body[:1200])
               return j
 
           catalog("HomeAnime", {})
           catalog("SearchAnime", {"search": "frieren", "page": 1, "perPage": 20})
           catalog("BrowseAnime", {"sort": ["TRENDING_DESC"], "page": 1, "perPage": 20})
           catalog("BrowseAnime", {"sort": ["POPULARITY_DESC"], "genres": ["Action"], "page": 1, "perPage": 24})
+          catalog("BrowseAnime", {"genres": ["Romance"], "page": 2, "perPage": 24})
           catalog("BrowseAnime", {"sort": ["SCORE_DESC"], "format": "TV", "status": "RELEASING", "page": 1, "perPage": 24})
           catalog("BrowseAnime", {"sort": ["POPULARITY_DESC"], "season": "FALL", "seasonYear": 2026, "page": 1, "perPage": 24})
           catalog("BrowseAnime", {"search": "one piece", "page": 1, "perPage": 24})
-          catalog("BrowseAnime", {"genres": ["Romance"], "page": 2, "perPage": 24})
+          catalog("BrowseAnime", {"sort": ["START_DATE_DESC"], "page": 1, "perPage": 24})
           catalog("AnimeDetail", {"slug": "frieren-beyond-journey-s-end-c6fbj"})
 
           st, hd, body = req(BASE + "/api/recent-episodes")
-          print("\n### recent-episodes status:", st)
-          print(body[:600])
+          print("\n### recent-episodes status:", st, "len", len(body))
+          print(body[:800])
 
-          # Mint the watch cookie from a watch page
           st, hd, body = req(BASE + "/anime/frieren-beyond-journey-s-end-c6fbj-episode-1",
                              headers={"Accept": "text/html"})
           print("\n### watch page status:", st, "len:", len(body))
           sc = hd.get("Set-Cookie", "")
-          print("set-cookie:", sc[:200])
+          print("set-cookie:", sc[:300])
           cookie = sc.split(";")[0] if sc else ""
 
-          st, hd, body = req(BASE + "/api/episode",
-                             {"anilistId": 1000006351, "malId": 52991, "episode": 1},
-                             {"Referer": BASE + "/anime/frieren-beyond-journey-s-end-c6fbj-episode-1",
-                              "Origin": BASE, "Cookie": cookie})
-          print("\n### episode (no cookie-needed check) status:", st)
-          print(body[:1500])
-          try:
-              ep = json.loads(body)
-              v = (ep.get("variants") or [{}])[0]
-              src = (v.get("sources") or [{}])[0]
-              url = src.get("url", "")
-              print("first source url:", url)
-              if url:
-                  full = url if url.startswith("http") else BASE + url
-                  st2, hd2, body2 = req(full, headers={"Cookie": cookie,
-                                                       "Referer": BASE + "/anime/frieren-beyond-journey-s-end-c6fbj-episode-1",
-                                                       "Accept": "*/*"})
-                  print("master:", st2, hd2.get("Content-Type"), body2[:800])
-                  for line in body2.splitlines():
-                      if line and not line.startswith("#"):
-                          child = line if line.startswith("http") else BASE + ("" if line.startswith("/") else "/") + line
-                          st3, hd3, body3 = req(child, headers={"Cookie": cookie,
-                                                                "Referer": BASE + "/anime/frieren-beyond-journey-s-end-c6fbj-episode-1",
-                                                                "Accept": "*/*"})
-                          print("child:", st3, hd3.get("Content-Type"), len(body3), body3[:400])
-                          break
-          except Exception as e:
-              print("episode parse err", e)
+          watch_ref = BASE + "/anime/frieren-beyond-journey-s-end-c6fbj-episode-1"
+          for payload in [
+              {"anilistId": 1000006351, "malId": 52991, "episode": 1},
+              {"anilistId": 1000006351, "episode": 1, "first": True},
+          ]:
+              st, hd, body = req(BASE + "/api/episode", payload,
+                                 {"Referer": watch_ref, "Origin": BASE, "Cookie": cookie})
+              print("\n### episode", json.dumps(payload), "status:", st)
+              print(body[:2000])
+              try:
+                  ep = json.loads(body)
+                  for v in (ep.get("variants") or []):
+                      print("variant:", v.get("id"), v.get("label"), "sources:",
+                            [(s.get("label"), s.get("url"), [t.get("label") for t in (s.get("tracks") or [])]) for s in (v.get("sources") or [])])
+                  v = (ep.get("variants") or [{}])[0]
+                  src = (v.get("sources") or [{}])[0]
+                  url = src.get("url", "")
+                  if url:
+                      full = url if url.startswith("http") else BASE + url
+                      hdr = {"Cookie": cookie, "Referer": watch_ref, "Accept": "*/*"}
+                      st2, hd2, body2 = req(full, headers=hdr)
+                      print("master:", st2, hd2.get("Content-Type"), body2[:900])
+                      for line in body2.splitlines():
+                          if line and not line.startswith("#"):
+                              child = line if line.startswith("http") else BASE + ("" if line.startswith("/") else "/") + line
+                              st3, hd3, body3 = req(child, headers=hdr)
+                              print("child:", st3, hd3.get("Content-Type"), len(body3))
+                              inner = [l for l in body3.splitlines() if l and not l.startswith("#")]
+                              print("child first lines:", inner[:3])
+                              if inner:
+                                  seg = inner[0] if inner[0].startswith("http") else BASE + ("" if inner[0].startswith("/") else "/") + inner[0]
+                                  st4, hd4, body4 = req(seg, headers=hdr)
+                                  print("segment:", st4, hd4.get("Content-Type"), len(body4))
+                              break
+                      tr = (src.get("tracks") or [{}])[0]
+                      if tr.get("src"):
+                          turl = tr["src"] if tr["src"].startswith("http") else BASE + tr["src"]
+                          st5, hd5, body5 = req(turl, headers=hdr)
+                          print("subtitle:", st5, hd5.get("Content-Type"), body5[:300])
+              except Exception as e:
+                  print("episode parse err", repr(e))
 
-          # episode page html structure sample (for episode list fallback)
           st, hd, body = req(BASE + "/anime/frieren-beyond-journey-s-end-c6fbj",
                              headers={"Accept": "text/html"})
           print("\n### detail page status:", st, "len:", len(body))
-          print("has next_episode:", "__NEXT_DATA__" in body, "episodes marker:", body.count('"episodes"'))
+          print("episode markers:", body.count('-episode-'), "next_f:", body.count('_next'))
           PY
+          echo "probe done: $(wc -l < anv-probe.txt) lines"
+
+      - name: Commit probe output
+        run: |
+          git config user.name "arena-probe"
+          git config user.email "probe@arena.local"
+          git add anv-probe.txt
+          git commit -m "probe-output: anv api dump"
+          git push
