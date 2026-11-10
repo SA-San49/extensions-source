@@ -1,124 +1,84 @@
-watch: 200 cookies: [('shiro_watch', '1H25CwbWO1Gs7qEWJ7_6')]
-cookie header: shiro_watch=1H25CwbWO1Gs7qEWJ7_6JQ.1794370336.5clwxcOpF_uWjjDIbjCluw
-episode api: 200 variants: ['sub', 'dub']
+== sort values ==
+sort=TRENDING_DESC                                   -> 200 total=9409 n=2 first=Black Clover Season 2
+sort=POPULARITY_DESC                                 -> 200 total=9409 n=2 first=Solo Leveling Season 2: Arise from the Shadow
+sort=SCORE_DESC                                      -> 200 total=9409 n=2 first=Dorohedoro Season 2
+sort=START_DATE_DESC                                 -> 200 total=9409 n=2 first=Yaiba: Samurai Legend Season 2
+sort=UPDATED_AT_DESC                                 -> 200 total=9409 n=2 first=Aikatsu Stars!
+sort=FAVOURITES_DESC                                 -> 200 total=9409 n=2 first=Loner Life in Another World
+sort=TITLE_ROMAJI                                    -> 200 total=9409 n=2 first=_Summer
+sort=EPISODES_DESC                                   -> 200 total=9409 n=2 first=The God of War Dominates
 
-================ variant sub ================
+== search + sort ==
+search+sort                                          -> 200 total=58 n=3 first=One Piece Fan Letter
+search only                                          -> 200 total=58 n=3 first=One Piece
 
---- server Orange ---
-master status: 200 type: application/vnd.apple.mpegurl len: 795
-master body:
- #EXTM3U
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1800112,RESOLUTION=1920x1080,FRAME-RATE=25.000,CODECS="avc1.640032,mp4a.40.2"
-/stream/tvreFlv15nw5JSmNMsSIk61hWIjJpkNTqWSKyXJ4x_ZGnXn4FgbSkhdtkAGAWEjvG5iSR85Bi2keFW5QKKKdmiKGUsSzk_KNPx_ZFT5C6JsJkOL-KOUSjhhbqhBy0uSwjDf-mmdaRugUEeSwxFRr06MN-u0em36cE1eEH-MBNnvAbRCXY8cqGwom5rx2Ed-0HmjLDeb57UEyZcCfYnvJTiaHRTI_R1fRkbLnABywe40rIzEq_bxhoJi5qA/index.m3u8?k=hAr2nPtOfkdf6gnU
-#EXT-X-I-FRAME-STREAM-INF:BANDWIDTH=49071,RESOLUTION=640x360,CODECS="avc1.64001e",URI="/stream/QOQPYLntXukKJIFa0INz6mDoA5_R4Cm1iqrWouidefTFoEGj-BBajn4SCJTYnSjKI5jeU-RTi_cfJuGkt--AKdD49nZ2I0tZRf4jtDTVr3UQpTYQr539r3VZDyHl8oyIZ2UvEEFAo4pXpgARHymz2aCY0PZW50yww5PJ9kurJ58g-Js2RTYRyaRCu8yiXKR68zDV3iMFXu7rZ2RwPNovB93O9lZzU98zAL7UZGM-WepWlQwebjEBTp_9mpUe/index.m3u8?k=1_ilT-_2ho2gkgaf"
+== formats ==
+format=TV                                            -> 200 total=4627 n=2 first=Loner Life in Another World
+format=TV_SHORT                                      -> 200 total=7 n=2 first=[Mini] Smoking Behind the Supermarket with You
+format=MOVIE                                         -> 200 total=1398 n=2 first=Mardock Scramble: The First Compression
+format=SPECIAL                                       -> 200 total=871 n=2 first=Toradora!: Bento Battle
+format=OVA                                           -> 200 total=1222 n=2 first=Be-Bop Highschool
+format=ONA                                           -> 200 total=1237 n=2 first=Mobile Suit Gundam: Requiem for Vengeance
+format=MUSIC                                         -> 200 total=20 n=2 first=On Your Mark
 
-variant uris: ['/stream/tvreFlv15nw5JSmNMsSIk61hWIjJpkNTqWSKyXJ4x_ZGnXn4FgbSkhdtkAGAWEjvG5iSR85Bi2keFW5QKKKdmiKGUsSzk_KNPx_ZFT5C6JsJkOL-KOUSjhhbqhBy0uSwjDf-mmdaRugUEeSwxFRr06MN-u0em36cE1eEH-MBNnvAbRCXY8cqGwom5rx2Ed-0HmjLDeb57UEyZcCfYnvJTiaHRTI_R1fRkbLnABywe40rIzEq_bxhoJi5qA/index.m3u8?k=hAr2nPtOfkdf6gnU']
-child status: 200 type: application/vnd.apple.mpegurl len: 145242
-child body head:
- #EXTM3U
-#EXT-X-MEDIA-SEQUENCE:1
-#EXT-X-ALLOW-CACHE:YES
-#EXT-X-VERSION:3
-#EXT-X-TARGETDURATION:11
-#EXT-X-PLAYLIST-TYPE:VOD
-#EXTINF:4.56,
-/stream/FhHhUaoPACftInnAIAuYRjcRmLLgxZR2WQMeqxtg6U_wsrXC3HaT_nc6PUDntZFQySs-4i4T29PzVi8FsOEst-FSH0LWcRqm60Fww6LJYGCq1y7GIct_wF0EnfDuiEYFn8HqjvKlbwNI0vrrBvJYJ2W8IRFdtD6fEqKkZlXo4Awx3Ji_QwlHzF4ateixW3Q0OMbCOcntmVFvQrkus2v1tbwoLukeSJQqdjfEIbI__Gfo6OHtgiTR56SA0B1Lrt0BDZk12QSJ5RxGfhpDjrPcPEb5U4J3kfs60mR077nT6-qyIh-S3ePJyzS6bhDZ19bDNoEDWcYcIRMTRqCEPJGaWKi7LAFcnNHXBZhj8PaWehYCU0Oa0yUA/file.image?k=dc-2mmsEJbx6h7z0
-#EXTINF:10,
-/stream/8fU3uNn27agvoorKF5km_PQlWQ11JYs9XYrOzmwYX_Ih9QW_CV8bdroJ3_MgbseO7GKy0iZr8_0bDd-71PUeCKSQAZgJ2UzdtUaVrG89XT8D7JvdYiqD_GVsOyy_yyCBNCCXq
-segment status: 200 type: image/png len: 809780
-segment first bytes: 89504e470d0a1a0a0000000d49484452 as text: b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x00\x01\x00\x00\x00\x01'
-segment w/o cookie: 403 len: 0
-subtitle status: 200 type: application/octet-stream len: 22787
-subtitle head: WEBVTT
+== statuses ==
+status=FINISHED                                      -> 200 total=9052 n=2 first=Loner Life in Another World
+status=RELEASING                                     -> 200 total=258 n=2 first=Dr. Slump: Arale-chan
+status=NOT_YET_RELEASED                              -> 200 total=96 n=2 first=Made in Abyss: Mezameru Shinpi
+status=CANCELLED                                     -> 200 total=0 n=0 first=None
+status=HIATUS                                        -> 200 total=0 n=0 first=None
 
-00:20.240 --> 00:29.210
-<b>فريرن</b>
+== seasons ==
+season=WINTER 2025                                   -> 200 total=87 n=2 first=Beheneko: The Elf-Girl's Cat is Secretly an S-Ranked Monster!
+season=SPRING 2025                                   -> 200 total=102 n=2 first=I'm the Evil Lord of an Intergalactic Empire!
+season=SUMMER 2025                                   -> 200 total=134 n=2 first=Shirohiyo - Reincarnated as a Neglected Noble: Raising My Baby Brother With Memories From My Past Life
+season=FALL 2025                                     -> 200 total=102 n=2 first=Chainsaw Man: The Compilation
+season=FALL 2026                                     -> 200 total=88 n=2 first=Chained Soldier Season 2 [Uncensored]
 
-00:20.240 --> 00:29.210
-<b>ما وراء نهاية الرحلة</b>
+== isAdult ==
+isAdult=false                                        -> 200 total=9409 n=2 first=Loner Life in Another World
+isAdult=true                                         -> 200 total=9409 n=2 first=Loner Life in Another World
 
-01:29.980 --> 01:39.740
-<b>في أقصى شمال 
-القارة، وصلت
-إل
-subtitle w/o cookie: 200 len: 22787
+== genres ==
+genre=Action                                         -> 200 total=3614 n=2 first=Loner Life in Another World
+genre=Adventure                                      -> 200 total=2351 n=2 first=Loner Life in Another World
+genre=Comedy                                         -> 200 total=4008 n=2 first=Dandadan
+genre=Drama                                          -> 200 total=1962 n=2 first=True Beauty
+genre=Ecchi                                          -> 200 total=678 n=2 first=High School DxD BorN
+genre=Fantasy                                        -> 200 total=2764 n=2 first=Loner Life in Another World
+genre=Horror                                         -> 200 total=319 n=2 first=Gantz:O
+genre=Mahou Shoujo                                   -> 200 total=5 n=2 first=Magical Sisters Lulutto Lilly Part 2
+genre=Mecha                                          -> 200 total=703 n=2 first=Infinite Ryvius
+genre=Music                                          -> 200 total=372 n=2 first=Symphogear G
+genre=Mystery                                        -> 200 total=696 n=2 first=Delico's Nursery
+genre=Psychological                                  -> 200 total=292 n=2 first=Re:ZERO -Starting Life in Another World- Season 3
+genre=Romance                                        -> 200 total=1797 n=2 first=Blue Box
+genre=Sci-Fi                                         -> 200 total=1921 n=2 first=Mechanical Arms
+genre=Slice of Life                                  -> 200 total=1288 n=2 first=Kinoko Inu
+genre=Sports                                         -> 200 total=432 n=2 first=Blue Box
+genre=Supernatural                                   -> 200 total=1293 n=2 first=Dandadan
+genre=Thriller                                       -> 200 total=154 n=2 first=KamiErabi GOD.app Season 2
+genre=Hentai                                         -> 200 total=1 n=1 first=The Lonely Snow Widow and the Cursed Ring
 
---- server Pear ---
-master status: 200 type: application/vnd.apple.mpegurl len: 819
-master body:
- #EXTM3U
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1800112,RESOLUTION=1920x1080,FRAME-RATE=25.000,CODECS="avc1.640032,mp4a.40.2"
-/stream/wBgEiKUck_vdigT51aHFomnR3Ci74uQAyjR21PFWg0npAIVIyIuge64NJ1uVt9cF-51sWhlKImC-YArxnD1OJN-ENMn9DMIgtdS3wuQWAvA_xoLp7MOfyeROeWB2QUvrIgH3Z98GuU7CN4y9VeoRBhYW1R8YYF0zK856qt4iAsEF1gQHhPjXGX11Ni2f05vAqdhRmVKcvKlVZc894VtO7-ALKcBJNbC90AODFUG1Bx0g9UQTgh21PD0Or0NfvGOfGEP5lg/index.m3u8?k=jhkOsPtDxnP6d_Yk
-#EXT-X-I-FRAME-STREAM-INF:BANDWIDTH=49071,RESOLUTION=640x360,CODECS="avc1.64001e",URI="/stream/ucZQGsU0vrwD-jDrTIsLZGjgB2ZuxjBBbY0ULYi6TQbyctJ6Ccc8i3dUWdLLq-991CDGbFrhCYUJj68Y_Dqz2ORUEsM6c_qozi5NURe-OJCBYxQhiUyb826RcUg2L5J57iXYaN05769kiJfgtthth3emQKIau4MjXDeESPYAGG_PM0YqvhWIxcqiVQ_dX2lJdpwrZiMflxrllK2NsFIVmRAtip4f-ca1y8EZ4X0FqexIwsoRwn7EiUKQ_fPEnF5Xy_08WxPc/index.m3u8?k=tDYwxIBh0qoFZA2u"
+== perPage limits ==
+perPage=24                                           -> 200 total=9409 n=24 first=Loner Life in Another World
+perPage=30                                           -> 200 total=9409 n=30 first=Loner Life in Another World
+perPage=50                                           -> 200 total=9409 n=50 first=Loner Life in Another World
+perPage=100                                          -> 200 total=9409 n=50 first=Loner Life in Another World
 
-variant uris: ['/stream/wBgEiKUck_vdigT51aHFomnR3Ci74uQAyjR21PFWg0npAIVIyIuge64NJ1uVt9cF-51sWhlKImC-YArxnD1OJN-ENMn9DMIgtdS3wuQWAvA_xoLp7MOfyeROeWB2QUvrIgH3Z98GuU7CN4y9VeoRBhYW1R8YYF0zK856qt4iAsEF1gQHhPjXGX11Ni2f05vAqdhRmVKcvKlVZc894VtO7-ALKcBJNbC90AODFUG1Bx0g9UQTgh21PD0Or0NfvGOfGEP5lg/index.m3u8?k=jhkOsPtDxnP6d_Yk']
-child status: 200 type: application/vnd.apple.mpegurl len: 108955
-child body head:
- #EXTM3U
-#EXT-X-MEDIA-SEQUENCE:1
-#EXT-X-ALLOW-CACHE:YES
-#EXT-X-VERSION:3
-#EXT-X-TARGETDURATION:11
-#EXT-X-PLAYLIST-TYPE:VOD
-#EXTINF:4.56,
-/stream/De-NbTpmj5aoLgAtA8G7ZvSuON9-XPi0SCWRyEE9_E6AhwifDwjZdV7EirM-YiLLch1_koqpdYQ-9PGT18PT8j7wX4ATWHGIYtgWK4xLoCR21SZeanWjVDIMPtqrMsKNPj816oAPp29FeH6Ycm1a9_oIreib2GXp0LqXly_PdedIZPdp90HGFUHFvM77m9BE-bdkG1aZlbgKsuDH32yhUxm0uhO8P58s_tPGGNnnkBh1mYH51zlS45yhIjUpHZw5UrwTM2UZBLA/file.jpg?k=parIrkev1tp_rkCp
-#EXTINF:10,
-/stream/ch7zmFF6yrLxjbJmw-YBFnQ3avYyBJ3tGlsQ7iqQevbW41cWxbzHAsIFglCfOSZSNcrkGxpc_3Xlyt8TEXRsVBDCtrg7vgIX1Hi_mqW26VkC0yv-FQALhsZlg_pLKlg_r48Tv8CWxTwcbQ55a21Gnj7SPEFGfR3VdVGd-z2dFnQo2IpBrD_va3bFbjp13AuaJoWTv0wmau0YDXrHXOujFlwzJOXRCAlYioYsFmAzfpwPtQ0N
-segment status: 200 type: image/jpeg len: 809528
-segment first bytes: 474000100000b00d0001c100000001ef as text: b'G@\x00\x10\x00\x00\xb0\r\x00\x01\xc1\x00\x00\x00\x01\xef\xff6\x90\xe2=\xff\xff\xff'
-segment w/o cookie: 200 len: 809528
-subtitle status: 200 type: application/octet-stream len: 22787
-subtitle head: WEBVTT
+== combined ==
+combo                                                -> 200 total=1 n=1 first=Solo Leveling
 
-00:20.240 --> 00:29.210
-<b>فريرن</b>
-
-00:20.240 --> 00:29.210
-<b>ما وراء نهاية الرحلة</b>
-
-01:29.980 --> 01:39.740
-<b>في أقصى شمال 
-القارة، وصلت
-إل
-subtitle w/o cookie: 200 len: 22787
-
---- server Banana ---
-master status: 200 type: application/vnd.apple.mpegurl len: 819
-master body:
- #EXTM3U
-#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1800112,RESOLUTION=1920x1080,FRAME-RATE=25.000,CODECS="avc1.640032,mp4a.40.2"
-/stream/wBgEiKUck_vdigT51aHFomnR3Ci74uQAyjR21PFWg0npAIVIyIuge64NJ1uVt9cF-51sWhlKImC-YArxnD1OJN-ENMn9DMIgtdS3wuQWAvA_xoLp7MOfyeROeWB2QUvrIgH3Z98GuU7CN4y9VeoRBhYW1R8YYF0zK856qt4iAsEF1gQHhPjXGX11Ni2f05vAqdhRmVKcvKlVZc894VtO7-ALKcBJNbC90AODFUG1Bx0g9UQTgh21PD0Or0NfvGOfGEP5lg/index.m3u8?k=jhkOsPtDxnP6d_Yk
-#EXT-X-I-FRAME-STREAM-INF:BANDWIDTH=49071,RESOLUTION=640x360,CODECS="avc1.64001e",URI="/stream/ucZQGsU0vrwD-jDrTIsLZGjgB2ZuxjBBbY0ULYi6TQbyctJ6Ccc8i3dUWdLLq-991CDGbFrhCYUJj68Y_Dqz2ORUEsM6c_qozi5NURe-OJCBYxQhiUyb826RcUg2L5J57iXYaN05769kiJfgtthth3emQKIau4MjXDeESPYAGG_PM0YqvhWIxcqiVQ_dX2lJdpwrZiMflxrllK2NsFIVmRAtip4f-ca1y8EZ4X0FqexIwsoRwn7EiUKQ_fPEnF5Xy_08WxPc/index.m3u8?k=tDYwxIBh0qoFZA2u"
-
-variant uris: ['/stream/wBgEiKUck_vdigT51aHFomnR3Ci74uQAyjR21PFWg0npAIVIyIuge64NJ1uVt9cF-51sWhlKImC-YArxnD1OJN-ENMn9DMIgtdS3wuQWAvA_xoLp7MOfyeROeWB2QUvrIgH3Z98GuU7CN4y9VeoRBhYW1R8YYF0zK856qt4iAsEF1gQHhPjXGX11Ni2f05vAqdhRmVKcvKlVZc894VtO7-ALKcBJNbC90AODFUG1Bx0g9UQTgh21PD0Or0NfvGOfGEP5lg/index.m3u8?k=jhkOsPtDxnP6d_Yk']
-child status: 200 type: application/vnd.apple.mpegurl len: 108955
-child body head:
- #EXTM3U
-#EXT-X-MEDIA-SEQUENCE:1
-#EXT-X-ALLOW-CACHE:YES
-#EXT-X-VERSION:3
-#EXT-X-TARGETDURATION:11
-#EXT-X-PLAYLIST-TYPE:VOD
-#EXTINF:4.56,
-/stream/De-NbTpmj5aoLgAtA8G7ZvSuON9-XPi0SCWRyEE9_E6AhwifDwjZdV7EirM-YiLLch1_koqpdYQ-9PGT18PT8j7wX4ATWHGIYtgWK4xLoCR21SZeanWjVDIMPtqrMsKNPj816oAPp29FeH6Ycm1a9_oIreib2GXp0LqXly_PdedIZPdp90HGFUHFvM77m9BE-bdkG1aZlbgKsuDH32yhUxm0uhO8P58s_tPGGNnnkBh1mYH51zlS45yhIjUpHZw5UrwTM2UZBLA/file.jpg?k=parIrkev1tp_rkCp
-#EXTINF:10,
-/stream/ch7zmFF6yrLxjbJmw-YBFnQ3avYyBJ3tGlsQ7iqQevbW41cWxbzHAsIFglCfOSZSNcrkGxpc_3Xlyt8TEXRsVBDCtrg7vgIX1Hi_mqW26VkC0yv-FQALhsZlg_pLKlg_r48Tv8CWxTwcbQ55a21Gnj7SPEFGfR3VdVGd-z2dFnQo2IpBrD_va3bFbjp13AuaJoWTv0wmau0YDXrHXOujFlwzJOXRCAlYioYsFmAzfpwPtQ0N
-segment status: 200 type: image/jpeg len: 809528
-segment first bytes: 474000100000b00d0001c100000001ef as text: b'G@\x00\x10\x00\x00\xb0\r\x00\x01\xc1\x00\x00\x00\x01\xef\xff6\x90\xe2=\xff\xff\xff'
-segment w/o cookie: 200 len: 809528
-subtitle status: 200 type: application/octet-stream len: 22787
-subtitle head: WEBVTT
-
-00:20.240 --> 00:29.210
-<b>فريرن</b>
-
-00:20.240 --> 00:29.210
-<b>ما وراء نهاية الرحلة</b>
-
-01:29.980 --> 01:39.740
-<b>في أقصى شمال 
-القارة، وصلت
-إل
-subtitle w/o cookie: 200 len: 22787
-
-second title (black clover s2) api: 200 status: {'status': 'ready', 'variants': [{'id': 'sub', 'label': 'Sub', 'sources': [{'id': '6QEvtA31cOdn', 'label': 'Orange', 'ur
+== movie episode api ==
+movies                                               -> 200 total=1398 n=3 first=A Silent Voice
+movie: a-silent-voice-fghla 1000000060 28851 None 2
+movie detail episodes: None nextAiring: None streaming: 1 format: MOVIE
+icon links: ['<link rel="preload" href="/brand/blob.svg" as="image"/>', '<link rel="shortcut icon" href="/brand/icon-32.png"/>', '<link rel="icon" href="/brand/favicon.svg" type="image/svg+xml"/>', '<link rel="icon" href="/brand/icon-32.png" type="image/png" sizes="32x32"/>', '<link rel="apple-touch-icon" href="/brand/apple-touch-icon.png"/>', '<link rel="preload" href="/banner.png" as="image" fetchPriority="high"/>']
+https://anv.to/brand/blob.svg -> 200 image/svg+xml 542 bytes head=3c73766720786d6c6e733d22
+https://anv.to/brand/icon-32.png -> 200 image/png 880 bytes head=89504e470d0a1a0a0000000d
+https://anv.to/brand/favicon.svg -> 200 image/svg+xml 655 bytes head=3c73766720786d6c6e733d22
+https://anv.to/brand/apple-touch-icon.png -> 200 image/png 3570 bytes head=89504e470d0a1a0a0000000d
+https://anv.to/banner.png -> 200 image/png 1716425 bytes head=89504e470d0a1a0a0000000d
+https://anv.to/favicon.ico -> ERR HTTP Error 404: Not Found
+https://anv.to/icon.png -> ERR HTTP Error 404: Not Found
+https://anv.to/apple-touch-icon.png -> 200 image/png 3570 bytes head=89504e470d0a1a0a0000000d
