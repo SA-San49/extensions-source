@@ -1,5 +1,6 @@
 package eu.kanade.tachiyomi.animeextension.en.anv
 
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -13,16 +14,16 @@ data class PageEnvelope(
     val errors: List<CatalogError>? = null,
     val error: String? = null,
 ) {
-    fun page(): Page = data?.page ?: throw Exception(errors?.firstOrNull()?.message ?: error ?: "No results found")
+    fun page(): MediaPage = data?.page ?: throw Exception(errors?.firstOrNull()?.message ?: error ?: "No results found")
 }
 
 @Serializable
 data class PageData(
-    val Page: Page? = null,
+    @SerialName("Page") val page: MediaPage? = null,
 )
 
 @Serializable
-data class Page(
+data class MediaPage(
     val media: List<Media>? = null,
     val pageInfo: PageInfo? = null,
 )
@@ -41,12 +42,12 @@ data class DetailEnvelope(
     val errors: List<CatalogError>? = null,
     val error: String? = null,
 ) {
-    fun media(): Media = data?.Media ?: throw Exception(errors?.firstOrNull()?.message ?: error ?: "Anime not found")
+    fun media(): Media = data?.media ?: throw Exception(errors?.firstOrNull()?.message ?: error ?: "Anime not found")
 }
 
 @Serializable
 data class DetailData(
-    val Media: Media? = null,
+    @SerialName("Media") val media: Media? = null,
 )
 
 @Serializable

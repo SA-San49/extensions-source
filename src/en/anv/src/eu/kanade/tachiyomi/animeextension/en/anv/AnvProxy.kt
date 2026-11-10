@@ -100,7 +100,7 @@ class AnvProxy(private val client: OkHttpClient) {
             val response = try {
                 client.newCall(builder.build()).execute()
             } catch (e: IOException) {
-                return newFixedLengthResponse(Response.Status.BAD_GATEWAY, MIME_PLAINTEXT, "upstream error: ${e.message}")
+                return newFixedLengthResponse((Response.Status.lookup(502) ?: Response.Status.INTERNAL_ERROR), MIME_PLAINTEXT, "upstream error: ${e.message}")
             }
 
             response.use { res ->
@@ -123,7 +123,12 @@ class AnvProxy(private val client: OkHttpClient) {
 
                 return when {
                     text != null && text.trimStart().startsWith("#EXTM3U") ->
-                        respond(Response.Status.OK, MIME_M3U8, rewritePlaylist(text, finalUrl, sessionId), res)
+                        respond(
+                            Response.Status.OK,
+                            MIME_M3U8,
+                            rewritePlaylist(text, finalUrl, sessionId).toByteArray(),
+                            res,
+                        )
 
                     text != null && text.trimStart().startsWith("WEBVTT") ->
                         respond(Response.Status.OK, MIME_VTT, body, res)

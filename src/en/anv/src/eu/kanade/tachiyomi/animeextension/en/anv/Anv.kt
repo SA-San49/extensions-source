@@ -21,6 +21,7 @@ import kotlinx.coroutines.withContext
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonObject
+import kotlinx.serialization.json.JsonPrimitive
 import kotlinx.serialization.json.buildJsonObject
 import kotlinx.serialization.json.put
 import kotlinx.serialization.json.putJsonArray
@@ -86,7 +87,7 @@ class Anv : AnimeHttpSource(), ConfigurableAnimeSource {
         buildJsonObject {
             put("page", page)
             put("perPage", PAGE_SIZE)
-            putJsonArray("sort") { add("POPULARITY_DESC") }
+            putJsonArray("sort") { add(JsonPrimitive("POPULARITY_DESC")) }
         },
     )
 
@@ -131,12 +132,12 @@ class Anv : AnimeHttpSource(), ConfigurableAnimeSource {
             put("page", page)
             put("perPage", PAGE_SIZE)
             if (search.isNotEmpty()) put("search", search)
-            if (sort != null) putJsonArray("sort") { add(sort!!) }
+            if (sort != null) putJsonArray("sort") { add(JsonPrimitive(sort!!)) }
             if (format != null) put("format", format)
             if (status != null) put("status", status)
             if (season != null) put("season", season)
             if (year != null) put("seasonYear", year)
-            if (genres.isNotEmpty()) putJsonArray("genres") { genres.forEach { add(it) } }
+            if (genres.isNotEmpty()) putJsonArray("genres") { genres.forEach { add(JsonPrimitive(it)) } }
         }
 
         return catalogRequest("BrowseAnime", variables)
