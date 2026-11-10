@@ -1,0 +1,119 @@
+name: probe-anv
+
+on:
+  push:
+    branches:
+      - 'arena/**'
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe anv.to API
+        run: |
+          python3 - <<'PY'
+          import json, urllib.request, urllib.error
+
+          UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+          BASE = "https://anv.to"
+
+          def req(url, data=None, headers=None, method=None):
+              h = {"User-Agent": UA, "Accept": "application/json"}
+              if headers:
+                  h.update(headers)
+              body = None
+              if data is not None:
+                  body = json.dumps(data).encode()
+                  h["Content-Type"] = "application/json"
+              r = urllib.request.Request(url, data=body, headers=h, method=method)
+              try:
+                  with urllib.request.urlopen(r, timeout=45) as resp:
+                      return resp.status, dict(resp.headers), resp.read().decode("utf-8", "replace")
+              except urllib.error.HTTPError as e:
+                  return e.code, dict(e.headers), e.read().decode("utf-8", "replace")
+              except Exception as e:
+                  return -1, {}, repr(e)
+
+          def catalog(op, variables):
+              st, hd, body = req(BASE + "/api/catalog", {"operation": op, "variables": variables},
+                                 {"Referer": BASE + "/", "Origin": BASE})
+              print(f"\n### {op} {json.dumps(variables)}")
+              print("status:", st)
+              try:
+                  j = json.loads(body)
+              except Exception:
+                  print("raw:", body[:800]); return None
+              if isinstance(j, dict) and "data" in j and j["data"]:
+                  d = j["data"]
+                  if "Page" in d:
+                      media = d["Page"].get("media") or []
+                      print("media count:", len(media), "pageInfo:", d["Page"].get("pageInfo"))
+                      if media:
+                          print("first media keys:", sorted(media[0].keys()))
+                          print("first media:", json.dumps(media[0])[:1200])
+                  elif "Media" in d:
+                      print("Media:", json.dumps(d["Media"])[:3000])
+                  else:
+                      print("data keys:", list(d.keys()))
+                      print(json.dumps(d)[:2000])
+              else:
+                  print("body:", body[:1000])
+              return j
+
+          catalog("HomeAnime", {})
+          catalog("SearchAnime", {"search": "frieren", "page": 1, "perPage": 20})
+          catalog("BrowseAnime", {"sort": ["TRENDING_DESC"], "page": 1, "perPage": 20})
+          catalog("BrowseAnime", {"sort": ["POPULARITY_DESC"], "genres": ["Action"], "page": 1, "perPage": 24})
+          catalog("BrowseAnime", {"sort": ["SCORE_DESC"], "format": "TV", "status": "RELEASING", "page": 1, "perPage": 24})
+          catalog("BrowseAnime", {"sort": ["POPULARITY_DESC"], "season": "FALL", "seasonYear": 2026, "page": 1, "perPage": 24})
+          catalog("BrowseAnime", {"search": "one piece", "page": 1, "perPage": 24})
+          catalog("BrowseAnime", {"genres": ["Romance"], "page": 2, "perPage": 24})
+          catalog("AnimeDetail", {"slug": "frieren-beyond-journey-s-end-c6fbj"})
+
+          st, hd, body = req(BASE + "/api/recent-episodes")
+          print("\n### recent-episodes status:", st)
+          print(body[:600])
+
+          # Mint the watch cookie from a watch page
+          st, hd, body = req(BASE + "/anime/frieren-beyond-journey-s-end-c6fbj-episode-1",
+                             headers={"Accept": "text/html"})
+          print("\n### watch page status:", st, "len:", len(body))
+          sc = hd.get("Set-Cookie", "")
+          print("set-cookie:", sc[:200])
+          cookie = sc.split(";")[0] if sc else ""
+
+          st, hd, body = req(BASE + "/api/episode",
+                             {"anilistId": 1000006351, "malId": 52991, "episode": 1},
+                             {"Referer": BASE + "/anime/frieren-beyond-journey-s-end-c6fbj-episode-1",
+                              "Origin": BASE, "Cookie": cookie})
+          print("\n### episode (no cookie-needed check) status:", st)
+          print(body[:1500])
+          try:
+              ep = json.loads(body)
+              v = (ep.get("variants") or [{}])[0]
+              src = (v.get("sources") or [{}])[0]
+              url = src.get("url", "")
+              print("first source url:", url)
+              if url:
+                  full = url if url.startswith("http") else BASE + url
+                  st2, hd2, body2 = req(full, headers={"Cookie": cookie,
+                                                       "Referer": BASE + "/anime/frieren-beyond-journey-s-end-c6fbj-episode-1",
+                                                       "Accept": "*/*"})
+                  print("master:", st2, hd2.get("Content-Type"), body2[:800])
+                  for line in body2.splitlines():
+                      if line and not line.startswith("#"):
+                          child = line if line.startswith("http") else BASE + ("" if line.startswith("/") else "/") + line
+                          st3, hd3, body3 = req(child, headers={"Cookie": cookie,
+                                                                "Referer": BASE + "/anime/frieren-beyond-journey-s-end-c6fbj-episode-1",
+                                                                "Accept": "*/*"})
+                          print("child:", st3, hd3.get("Content-Type"), len(body3), body3[:400])
+                          break
+          except Exception as e:
+              print("episode parse err", e)
+
+          # episode page html structure sample (for episode list fallback)
+          st, hd, body = req(BASE + "/anime/frieren-beyond-journey-s-end-c6fbj",
+                             headers={"Accept": "text/html"})
+          print("\n### detail page status:", st, "len:", len(body))
+          print("has next_episode:", "__NEXT_DATA__" in body, "episodes marker:", body.count('"episodes"'))
+          PY
